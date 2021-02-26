@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home.html">FilmDB</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="http://18.220.169.80:8080/FilmDB/Logout">Logout</a></li>
+				<li class="active"><a href="#">Register</a></li>
+				<li><a href="http://18.220.169.80:8080/FilmDB/Favorites">Favorites</a></li>
+				<li><a href="http://18.220.169.80:8080/FilmDB/TopTen">Top Films</a></li>
+				<li><a href="http://18.220.169.80:8080/FilmDB/CurrentlyShowing">Currently Showing</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<form action="http://18.220.169.80:8080/FilmDB/Registration" method="post">
+			<label>Email:&nbsp &nbsp &nbsp &nbsp <input name="email" type="email" required></label>
+			<br>
+			<label>Username: <input name="username" type="text" required></label>
+			<br>
+			<label>Password: <input name="password" type="password" required></label>
+			<br>
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+
+    <script>
+		console.log("Javascript running on a web page!");
+    </script>
+  
+</body>
+</html>
